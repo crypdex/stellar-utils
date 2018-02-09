@@ -1,0 +1,201 @@
+[
+  {
+    "type": "TransactionMeta",
+    "value": "[undefined]",
+    "nodes": [
+      {
+        "type": "operations",
+        "value": "Array[1]",
+        "nodes": [
+          {
+            "type": "[0]",
+            "nodes": [
+              {
+                "type": "changes",
+                "value": "Array[3]",
+                "nodes": [
+                  {
+                    "type": "[0]",
+                    "value": "[ledgerEntryCreated]",
+                    "nodes": [
+                      {
+                        "type": "created",
+                        "nodes": [
+                          { "type": "lastModifiedLedgerSeq", "value": "7239201" },
+                          {
+                            "type": "data",
+                            "value": "[offer]",
+                            "nodes": [
+                              {
+                                "type": "offer",
+                                "nodes": [
+                                  {
+                                    "type": "sellerId",
+                                    "value": "[publicKeyTypeEd25519]",
+                                    "nodes": [
+                                      {
+                                        "type": "ed25519",
+                                        "value": {
+                                          "type": "code",
+                                          "value":
+                                            "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  { "type": "offerId", "value": "100171" },
+                                  {
+                                    "type": "selling",
+                                    "value": "[assetTypeCreditAlphanum4]",
+                                    "nodes": [
+                                      {
+                                        "type": "alphaNum4",
+                                        "nodes": [
+                                          { "type": "assetCode", "value": "CDX\u0000" },
+                                          {
+                                            "type": "issuer",
+                                            "value": "[publicKeyTypeEd25519]",
+                                            "nodes": [
+                                              {
+                                                "type": "ed25519",
+                                                "value": {
+                                                  "type": "code",
+                                                  "value":
+                                                    "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  { "type": "buying", "value": "[assetTypeNative]" },
+                                  {
+                                    "type": "amount",
+                                    "value": {
+                                      "type": "amount",
+                                      "value": { "parsed": "1", "raw": "10000000" }
+                                    }
+                                  },
+                                  {
+                                    "type": "price",
+                                    "nodes": [
+                                      { "type": "n", "value": "1" },
+                                      { "type": "d", "value": "8" }
+                                    ]
+                                  },
+                                  { "type": "flags", "value": "0" }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "[1]",
+                    "value": "[ledgerEntryState]",
+                    "nodes": [
+                      {
+                        "type": "state",
+                        "nodes": [
+                          { "type": "lastModifiedLedgerSeq", "value": "7239201" },
+                          {
+                            "type": "data",
+                            "value": "[account]",
+                            "nodes": [
+                              {
+                                "type": "account",
+                                "nodes": [
+                                  {
+                                    "type": "accountId",
+                                    "value": "[publicKeyTypeEd25519]",
+                                    "nodes": [
+                                      {
+                                        "type": "ed25519",
+                                        "value": {
+                                          "type": "code",
+                                          "value":
+                                            "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  { "type": "balance", "value": "99999999900" },
+                                  { "type": "seqNum", "value": "31092088594497537" },
+                                  { "type": "numSubEntries", "value": "0" },
+                                  { "type": "inflationDest", "value": null },
+                                  { "type": "flags", "value": "0" },
+                                  { "type": "homeDomain", "value": "" },
+                                  {
+                                    "type": "thresholds",
+                                    "value": { "type": "code", "value": "AQAAAA==" }
+                                  },
+                                  { "type": "signers", "value": "Array[0]", "nodes": [] }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "[2]",
+                    "value": "[ledgerEntryUpdated]",
+                    "nodes": [
+                      {
+                        "type": "updated",
+                        "nodes": [
+                          { "type": "lastModifiedLedgerSeq", "value": "7239201" },
+                          {
+                            "type": "data",
+                            "value": "[account]",
+                            "nodes": [
+                              {
+                                "type": "account",
+                                "nodes": [
+                                  {
+                                    "type": "accountId",
+                                    "value": "[publicKeyTypeEd25519]",
+                                    "nodes": [
+                                      {
+                                        "type": "ed25519",
+                                        "value": {
+                                          "type": "code",
+                                          "value":
+                                            "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  { "type": "balance", "value": "99999999900" },
+                                  { "type": "seqNum", "value": "31092088594497537" },
+                                  { "type": "numSubEntries", "value": "1" },
+                                  { "type": "inflationDest", "value": null },
+                                  { "type": "flags", "value": "0" },
+                                  { "type": "homeDomain", "value": "" },
+                                  {
+                                    "type": "thresholds",
+                                    "value": { "type": "code", "value": "AQAAAA==" }
+                                  },
+                                  { "type": "signers", "value": "Array[0]", "nodes": [] }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

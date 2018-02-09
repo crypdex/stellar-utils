@@ -1,0 +1,85 @@
+{
+  "operations": [
+    {
+      "changes": [
+        {
+          "created": {
+            "lastModifiedLedgerSeq": "7239201",
+            "data": {
+              "offer": {
+                "sellerId": {
+                  "ed25519": {
+                    "type": "code",
+                    "value": "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                  }
+                },
+                "offerId": "100171",
+                "selling": {
+                  "alphaNum4": {
+                    "assetCode": "CDX\u0000",
+                    "issuer": {
+                      "ed25519": {
+                        "type": "code",
+                        "value": "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                      }
+                    }
+                  }
+                },
+                "buying": "[assetTypeNative]",
+                "amount": { "type": "amount", "value": { "parsed": "1", "raw": "10000000" } },
+                "price": { "n": "1", "d": "8" },
+                "flags": "0"
+              }
+            }
+          }
+        },
+        {
+          "state": {
+            "lastModifiedLedgerSeq": "7239201",
+            "data": {
+              "account": {
+                "accountId": {
+                  "ed25519": {
+                    "type": "code",
+                    "value": "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                  }
+                },
+                "balance": "99999999900",
+                "seqNum": "31092088594497537",
+                "numSubEntries": "0",
+                "inflationDest": null,
+                "flags": "0",
+                "homeDomain": "",
+                "thresholds": { "type": "code", "value": "AQAAAA==" },
+                "signers": []
+              }
+            }
+          }
+        },
+        {
+          "updated": {
+            "lastModifiedLedgerSeq": "7239201",
+            "data": {
+              "account": {
+                "accountId": {
+                  "ed25519": {
+                    "type": "code",
+                    "value": "GDOQWPMHNM5INB36LN46DBDMYG2NVGIGYU3JW7LJTAR2GJOPKE5PZWUW"
+                  }
+                },
+                "balance": "99999999900",
+                "seqNum": "31092088594497537",
+                "numSubEntries": "1",
+                "inflationDest": null,
+                "flags": "0",
+                "homeDomain": "",
+                "thresholds": { "type": "code", "value": "AQAAAA==" },
+                "signers": []
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

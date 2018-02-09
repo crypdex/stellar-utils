@@ -8,7 +8,7 @@ const convertTree = require('./convert-tree')
  */
 function objectFromXdr(xdrDoc, xdrType) {
   const tree = extrapolateFromXdr(xdrDoc, xdrType)
-  return convertTree(tree)
+  return convertTree(tree[0].nodes)
 }
 
 module.exports = objectFromXdr

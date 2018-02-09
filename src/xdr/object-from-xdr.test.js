@@ -6,6 +6,7 @@ describe('objectFromXdr', () => {
   let transactionMeta
   beforeAll(() => {
     transactionMeta = objectFromXdr(result_meta_xdr, 'TransactionMeta')
+    transactionMeta = transactionMeta
   })
 
   test('operations', () => {
@@ -16,26 +17,39 @@ describe('objectFromXdr', () => {
     expect(transactionMeta.operations[0].changes).toHaveLength(3)
   })
 
-  test('created change', () => {
-    const created = transactionMeta.operations[0].changes[0].created
+  describe('create operation', () => {
+    test('change', () => {
+      const created = transactionMeta.operations[0].changes[0].created
 
-    expect(created.lastModifiedLedgerSeq).toBe('7239201')
-    expect(created.data)
-    expect(created.data.offer)
+      expect(created.lastModifiedLedgerSeq).toBe('7239201')
+      expect(created.data)
+      expect(created.data.offer)
+    })
+
+    // THE ALL IMPORTANT!
+    test('offer id', () => {
+      const created = transactionMeta.operations[0].changes[0].created
+      const offer = created.data.offer
+      expect(offer.offerId).toBe('100171')
+    })
   })
 
-  test('created change', () => {
-    const created = transactionMeta.operations[0].changes[0].created
+  describe('state operation', () => {
+    let state
+    beforeAll(() => {
+      state = transactionMeta.operations[0].changes[1].state
+    })
 
-    expect(created.lastModifiedLedgerSeq).toBe('7239201')
-    expect(created.data)
-    expect(created.data.offer)
-  })
+    test('change', () => {
+      expect(state.lastModifiedLedgerSeq).toBe('7239201')
+      expect(state.data)
+      expect(state.data.account)
+    })
 
-  // THE ALL IMPORTANT!
-  test('offer id', () => {
-    const created = transactionMeta.operations[0].changes[0].created
-    const offer = created.data.offer
-    expect(offer.offerId).toBe('100171')
+    // THE ALL IMPORTANT!
+    test('signers is an array', () => {
+      expect(state.data.account.signers).toBeInstanceOf(Array)
+      // const created = transactionMeta.operations[0].changes[1].state
+    })
   })
 })
